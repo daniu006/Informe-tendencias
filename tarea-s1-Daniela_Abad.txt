@@ -1,0 +1,39 @@
+    1  sudo apt update 
+    2  sudo apt upgrade
+    3  clear
+    4  mkdir proyecto_comandos
+    5  cd proyecto_comandos/
+    6  mkdir documentos
+    7  mkdir imagenes
+    8  mkdir scripts
+    9  cd documentos/
+   10  touch notas.txt
+   11  echo "Hola" >> notas.txt
+   12  echo "mundo" >> notas.txt
+   13  echo "soy" >> notas.txt
+   14  echo "danny" >> notas.txt
+   15  cp notas.txt scripts/
+   16  cd ..
+   17  cp notas.txt scripts/
+   18  ls -l
+   19  cd documentos/  
+   20  cp notas.txt ../scripts/
+   21  cd ..
+   22  cd scripts/
+   23  ls
+   24  mv notas.txt backup_notas.txt
+   25  ls
+   26  cp backup_notas.txt ../imagenes/
+   27  cd ..
+   28  cd documentos/
+   29  touch resumen.txt
+   30  cat notas.txt > resumen.txt 
+   31  echo "esta es una linea adicional" >> resumen.txt 
+   32  cd ..
+   33  cd imagenes/
+   34  ls
+   35  rm backup_notas.txt 
+   36  cd ..
+   37  rmdir imagenes/
+   38  ls
+   39  history | tee  tarea-s1-Daniela_Abad.txt
